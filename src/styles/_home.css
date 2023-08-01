@@ -1,6 +1,7 @@
 .home-section {
   width: 100%;
   padding-block: 5rem;
+  z-index: 1;
 }
 
 .columns-section {

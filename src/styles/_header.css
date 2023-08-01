@@ -1,12 +1,35 @@
 header {
   display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
   justify-content: space-between;
   padding: 1rem 3rem;
+  background-color: transparent;
+  z-index: 999;
+  transition: all 0.5s;
+  top: 0;
+}
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  background-color: var(--light);
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 1px;
+}
+
+.header.sticky h1{
+  color: var(--dark);
+}
+.header.sticky a{
+  color: var(--dark);
+}
+.header.sticky a:hover{
+  color: var(--primary);
 }
 
 h1 {
   margin: 0;
+  color: var(--light);
 }
 
 .menu-toggle {
@@ -21,7 +44,7 @@ h1 {
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  z-index: 10;
+  z-index: 999;
   margin-block: auto;
 }
 
@@ -29,11 +52,15 @@ h1 {
   display: block;
   width: 2rem;
   height: 0.25rem;
-  background: #333;
+  background: var(--light);
   transform-origin: 1.1rem 0.1rem;
   position: relative;
   transition: all 0.3s linear;
   border-radius: 3px;
+}
+
+.header.sticky .menu-toggle span {
+  background: var(--dark);
 }
 
 .menu-toggle.open span {
@@ -56,7 +83,6 @@ h1 {
 nav {
   display: none;
   transition: transform 0.3s ease-in-out;
-  z-index: 1;
 }
 
 nav.open {
@@ -73,8 +99,12 @@ nav ul li {
   font-weight: 600;
 }
 
+nav.open ul li a {
+  color: var(--dark);
+}
+
 nav ul li a {
-  color: #333;
+  color: var(--light);
 }
 
 nav ul li a:hover {
@@ -94,7 +124,7 @@ nav ul li a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: var(--light);
     transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
     transform: translateX(-100%);

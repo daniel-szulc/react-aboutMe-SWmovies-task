@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import "../styles/_header.css"
 
 const Header = () => {
@@ -8,8 +8,29 @@ const Header = () => {
     setIsOpen(!isOpen);
   }
 
+
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      let value = window.scrollY;
+
+      if (value > 500) {
+        document.querySelector('.header').classList.add('sticky')
+      }else{
+        document.querySelector('.header').classList.remove('sticky')
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
-    <header>
+    <header className="header">
       <h1>My Site</h1>
       <button onClick={toggleMenu} className={`menu-toggle ${isOpen ? 'open' : ''}`}>
         <span></span>
