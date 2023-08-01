@@ -1,10 +1,15 @@
 import React from 'react';
+import Home from "./Home";
+import Hero from "./Hero";
 
 const Main = () => {
   return (
-    <main className="container">
-      <div className="content">
-        <h1>Welcome!</h1>
+    <main>
+      <Hero/>
+      <div className="container">
+        <div className="content">
+          <Home/>
+        </div>
       </div>
     </main>
   );

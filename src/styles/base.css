@@ -1,10 +1,18 @@
+:root {
+  --bg-1: url('/public/assets/background.webp');
+  --light: #f0f0f0;
+  --dark:  #333;
+  --primary: #007bff;
+  --primary-dark: #004fa6;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
   color: #444;
 }
 
 a {
-  color: #007bff;
   text-decoration: none;
 }
 
