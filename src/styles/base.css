@@ -49,3 +49,23 @@ a:hover {
   animation: none !important;
   transition: none !important;
 }
+
+.round-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.round-list li {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--primary-dark);
+  border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+  .round-list{
+    justify-content: space-around;
+  }
+}

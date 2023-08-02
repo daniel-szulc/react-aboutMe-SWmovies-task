@@ -36,27 +36,9 @@
   flex-basis: 60%;
 }
 
-.tech-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.tech-list li {
-  padding: 0.5rem 1rem;
-  border: 1.5px solid var(--primary-dark);
-  border-radius: 14px;
-}
-
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column-reverse;
     padding: 1rem;
-  }
-
-  .tech-list{
-    justify-content: space-around;
   }
 }

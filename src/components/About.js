@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/_about.css';
 import Gallery from "./Gallery";
+import FavoriteMovies from "./FavoriteMovies";
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
 
       <h3>Technologies I'm familiar with:</h3>
 
-      <ul className="tech-list">
+      <ul className="round-list">
         <li>React</li>
         <li>HTML</li>
         <li>CSS</li>
@@ -30,8 +31,12 @@ const About = () => {
         <li>SQL</li>
       </ul>
 
+          <FavoriteMovies/>
+
         </div>
+
     </div>
+
     </div>
   );
 };

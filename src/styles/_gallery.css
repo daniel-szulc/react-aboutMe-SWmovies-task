@@ -1,7 +1,6 @@
 .gallery-container {
   position: relative;
   width: 100%;
-  max-width: 500px;
   overflow: hidden;
   border-radius: 15px;
 }
@@ -11,13 +10,15 @@
   transition: transform 0.5s ease-in-out;
   width: 100%;
   max-height: 550px;
-  object-fit: cover;
-  object-position: center;
+
 }
 
 .gallery-image {
   width: 100%;
   flex-shrink: 0;
+  object-fit: cover;
+  object-position: center;
+
 }
 
 .gallery-arrows {
