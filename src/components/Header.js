@@ -11,7 +11,7 @@ const Header = () => {
 
 
   useEffect(() => {
-    const handleScroll = (event) => {
+    const handleScroll = () => {
       let value = window.scrollY;
 
       if (value > 500) {
@@ -20,6 +20,8 @@ const Header = () => {
         document.querySelector('.header').classList.remove('sticky')
       }
     };
+
+
 
     window.addEventListener('scroll', handleScroll);
 
@@ -37,7 +39,7 @@ const Header = () => {
         <span></span>
         <span></span>
       </button>
-      <nav className={isOpen ? 'open' : ''}>
+      <nav className={` ${isOpen ? 'open' : ''}`}>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>

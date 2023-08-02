@@ -1,7 +1,8 @@
 header {
   display: flex;
   position: absolute;
-  width: -webkit-fill-available;
+  width: 100%;
+  box-sizing: border-box;
   justify-content: space-between;
   padding: 1rem 3rem;
   background-color: transparent;
@@ -27,7 +28,7 @@ header {
   color: var(--primary);
 }
 
-h1 {
+.header h1 {
   margin: 0;
   color: var(--light);
 }
@@ -99,9 +100,7 @@ nav ul li {
   font-weight: 600;
 }
 
-nav.open ul li a {
-  color: var(--dark);
-}
+
 
 nav ul li a {
   color: var(--light);
@@ -117,6 +116,9 @@ nav ul li a:hover {
     display: flex;
   }
 
+  nav.open ul li a {
+    color: var(--dark);
+  }
   nav {
     display: block;
     visibility: hidden;

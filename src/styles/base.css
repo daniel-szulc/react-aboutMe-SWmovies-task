@@ -1,15 +1,19 @@
 :root {
   --bg-1: url('/public/assets/background.webp');
+  --white: #ffffff;
   --light: #f0f0f0;
+  --light-1:  #d0d0d0;
   --dark:  #333;
+  --dark-1: #444;
+  --dark-2: #666;
   --primary: #007bff;
   --primary-dark: #004fa6;
+  --primary-light: #3798ff;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
-  color: #444;
+  color: var(--dark);
 }
 
 a {
@@ -31,4 +35,17 @@ a:hover {
   width: 100%;
   max-width: 1000px;
   justify-content: center;
+  flex-direction: column;
+}
+
+.separator-line {
+  border: 0;
+  height: 1px;
+  background-color: var(--light-1);
+  margin: 0;
+}
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }
