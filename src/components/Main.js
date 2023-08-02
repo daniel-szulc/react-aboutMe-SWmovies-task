@@ -25,7 +25,7 @@ const Main = () => {
 
 
   return (
-    <main>
+    <main id="home" >
       <Hero/>
       <div className="container">
         <div className="content">

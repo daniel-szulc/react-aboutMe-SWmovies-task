@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/_icon.css';
 
 class Icon extends React.Component {
   render() {
@@ -23,6 +24,14 @@ class Icon extends React.Component {
       angleRight: (
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
           <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+        </svg>
+      ),
+      mouseScroll: (
+        <svg id="icon-mouse-scroll" viewBox="-105 0 512 512" xmlns="http://www.w3.org/2000/svg">
+          <path fill='var(--white)'
+                d="M151 0C68 0 0 68 0 151v210a151 151 0 0 0 301 0V151C301 68 234 0 151 0zm119 361a120 120 0 0 1-239 0V151a120 120 0 0 1 239 0zm0 0"/>
+          <path className="scroll" fill='var(--primary-light)' strokeWidth="2"
+                d="M151 102c-9 0-16 7-16 15v71a15 15 0 0 0 31 0v-71c0-8-7-15-15-15zm0 0"/>
         </svg>
       )
     };

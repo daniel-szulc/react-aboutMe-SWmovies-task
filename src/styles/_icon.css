@@ -1,0 +1,28 @@
+#icon-mouse-scroll .scroll {
+  -webkit-animation: scrolling 1s alternate infinite ease-in-out;
+  animation: scrolling 1s alternate infinite ease-in-out;
+}
+
+@-webkit-keyframes scrolling {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 80px);
+    transform: translate(0px, 80px);
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px, 80px);
+    transform: translate(0px, 80px);
+  }
+}

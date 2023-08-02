@@ -48,3 +48,8 @@
     font-size: 5rem;
   }
   }
+
+.mouse-scroll{
+  position: absolute;
+  bottom: 30px;
+}

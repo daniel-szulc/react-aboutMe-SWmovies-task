@@ -4,7 +4,7 @@ import Icon from "../utils/Icon";
 
 const Home = () => {
   return (
-    <div className="home-section">
+    <div id='columns' className="home-section">
       <section className="columns-section">
         <div>
           <Icon name='design' size={32}/>
