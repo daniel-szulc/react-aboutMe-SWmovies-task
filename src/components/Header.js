@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "../styles/_header.css"
 
 const Header = () => {
@@ -7,29 +7,6 @@ const Header = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   }
-
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let value = window.scrollY;
-
-      if (value > 500) {
-        document.querySelector('.header').classList.add('sticky')
-      }else{
-        document.querySelector('.header').classList.remove('sticky')
-      }
-    };
-
-
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
 
   return (
     <header className="header">
@@ -41,8 +18,8 @@ const Header = () => {
       </button>
       <nav className={` ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="/#home">Home</a></li>
+          <li><a href="/#about">About</a></li>
         </ul>
       </nav>
     </header>

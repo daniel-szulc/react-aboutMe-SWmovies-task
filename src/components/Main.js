@@ -23,6 +23,23 @@ const Main = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      let value = window.scrollY;
+
+      if (value > 500) {
+        document.querySelector('.header').classList.add('sticky')
+      }else{
+        document.querySelector('.header').classList.remove('sticky')
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <main id="home" >

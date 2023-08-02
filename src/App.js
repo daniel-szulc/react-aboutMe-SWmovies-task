@@ -2,31 +2,23 @@ import './App.css';
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import React, {useEffect, useState} from "react";
-import SWApiClient from "./services/SWApiClient";
-import MoviesContext from './context/MoviesContext';
+import React from "react";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import MovieDetails from "./components/MovieDetails";
+import {MoviesContextProvider} from "./context/MovieContextProvider";
 
 function App() {
-
-  const [movies, setMovies] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    SWApiClient.fetchMovies().then((data) => {
-      setMovies(data);
-      setLoading(false);
-    });
-  }, []);
-
   return (
-
-    <div>
+      <Router>
       <Header/>
-      <MoviesContext.Provider value={{ movies, loading }}>
-      <Main/>
-      </MoviesContext.Provider>
+      <MoviesContextProvider>
+        <Routes>
+          <Route path="/movie/:id" element={<MovieDetails/>}/>
+          <Route path="/" element={<Main/>}/>
+        </Routes>
+      </MoviesContextProvider>
       <Footer/>
-    </div>
+      </Router>
   );
 }
 
