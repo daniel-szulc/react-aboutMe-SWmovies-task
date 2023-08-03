@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-aboutMe-SWmovies-task/static/css/main.dc900783.css",
+    "main.js": "/react-aboutMe-SWmovies-task/static/js/main.7b1d3cb9.js",
+    "static/js/787.4fa825d2.chunk.js": "/react-aboutMe-SWmovies-task/static/js/787.4fa825d2.chunk.js",
+    "static/media/image-1.jpg": "/react-aboutMe-SWmovies-task/static/media/image-1.ea628c8769a4ba3d1c35.jpg",
+    "static/media/background.webp": "/react-aboutMe-SWmovies-task/static/media/background.12023ae3f5e68c358393.webp",
+    "static/media/image-2.jpg": "/react-aboutMe-SWmovies-task/static/media/image-2.2d83f4d838a1527e7f87.jpg",
+    "static/media/image-3.jpg": "/react-aboutMe-SWmovies-task/static/media/image-3.4bb9524b31cfdfc0681b.jpg",
+    "index.html": "/react-aboutMe-SWmovies-task/index.html",
+    "main.dc900783.css.map": "/react-aboutMe-SWmovies-task/static/css/main.dc900783.css.map",
+    "main.7b1d3cb9.js.map": "/react-aboutMe-SWmovies-task/static/js/main.7b1d3cb9.js.map",
+    "787.4fa825d2.chunk.js.map": "/react-aboutMe-SWmovies-task/static/js/787.4fa825d2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc900783.css",
+    "static/js/main.7b1d3cb9.js"
+  ]
+}
