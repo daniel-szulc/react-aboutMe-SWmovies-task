@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import MoviesContext from "../context/MoviesContext";
 import SWApiClient from "../services/SWApiClient";
 import "../styles/_movieDetails.css";
+import Loader from "../utils/Loader";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -31,14 +32,23 @@ const MovieDetails = () => {
       {movie ? (
         <>
           <h1>{movie.title}</h1>
-          <p><strong>Director:</strong> {movie.director}</p>
-          <p><strong>Producer:</strong> {movie.producer}</p>
-          <p><strong>ID:</strong> {movie.episode_id}</p>
-          <p><strong>Release Date:</strong> {movie.release_date}</p>
-          <p><strong>Opening Crawl:</strong> {movie.opening_crawl}</p>
+          <p className="release-date">{movie.release_date}</p>
+          <p className="opening-crawl">{movie.opening_crawl}</p>
+          <div className="info-columns">
+            <div className="column">
+              <p><strong>Director:</strong></p>
+              <p><strong>Producer:</strong></p>
+            </div>
+            <div className="column">
+              <p>{movie.director}</p>
+              <p>{movie.producer}</p>
+            </div>
+          </div>
         </>
       ) : (
-        <p>Loading...</p>
+        <div className='loader'>
+          <Loader/>
+        </div>
       )}
     </div>
     </div>

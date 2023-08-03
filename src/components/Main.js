@@ -5,7 +5,6 @@ import About from "./About";
 
 const Main = () => {
 
-
   useEffect(() => {
     const handleResize = () => {
       let resizeTimer;

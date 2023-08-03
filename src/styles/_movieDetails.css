@@ -1,3 +1,35 @@
 .movie-details{
-  padding: 6rem 2rem 2rem;
+  padding: 7rem 2rem 2rem;
+}
+
+.movie-details h1{
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.movie-details .release-date {
+  margin: 5px 0;
+  font-size: 16px;
+  color: var(--dark-2);
+
+}
+
+.movie-details .opening-crawl {
+  font-style: italic;
+  margin: 20px 0;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.movie-details .info-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.movie-details .info-columns .column {
+  width: auto;
+}
+
+.movie-details .info-columns .column p {
+  margin: 5px 0;
 }

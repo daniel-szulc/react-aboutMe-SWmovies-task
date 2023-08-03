@@ -4,7 +4,7 @@ class SWApiClient {
       .then((response) => response.json())
       .then((data) => data.results.map((movie) => ({
         ...movie,
-        url_id: movie.url.split('/').pop() //add new ID value from url value by which videos will be found
+        url_id: movie.url.split('/').filter(Boolean).pop() //add new ID value from url value by which videos will be found
       })))
       .catch((error) => {
         console.error('There was an error fetching the movies!', error);

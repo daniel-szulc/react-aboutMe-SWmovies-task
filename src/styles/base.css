@@ -63,9 +63,29 @@ a:hover {
   border: 1px solid var(--primary-dark);
   border-radius: 14px;
 }
+.round-list li:hover{
+ transform: scale(103%);
+  transition: transform 0.3s ease-in-out;
+  cursor: default;
+}
+
+.round-list a:hover{
+  text-decoration: none;
+}
+
+.button:hover{
+  background-color: var(--primary-light);
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer !important;
+}
 
 @media (max-width: 768px) {
   .round-list{
     justify-content: space-around;
   }
+}
+
+.loader {
+  text-align: center;
 }
