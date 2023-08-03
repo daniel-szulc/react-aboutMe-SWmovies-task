@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# About Me with Star Wars Films
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application serves as a personal portfolio, reflecting both a professional "About Me" section and an affinity for Star Wars films. Utilizing modern web development practices and technologies, the site offers a personal introduction alongside an interactive collection of Star Wars films fetched from the [SWAPI](https://swapi.dev).
+
+## Features
+
+- **Personal Introduction:** A dedicated section that provides insights into the user's professional background, skills and personal interests.
+- **Interactive Star Wars Films List:** Explore a collection of Star Wars films with details.
+- **Responsive Design:** Crafted to ensure an optimal viewing experience across various devices.
+
+## Data Source
+
+The information about Star Wars films displayed on this site is fetched from [SWAPI - The Star Wars API](https://swapi.dev). SWAPI provides access to detailed data about the Star Wars universe, including films, characters, planets, starships and more.
 
 ## Available Scripts
 
